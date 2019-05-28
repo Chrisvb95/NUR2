@@ -276,7 +276,7 @@ if __name__ == '__main__':
     mu,sig = 0,1
     rand = box_muller(rng.rand_num(N),rng.rand_num(N),mu,sig)
     gauss = lambda x : 1/(2*np.pi*sig**2)**0.5*np.exp(-0.5*(x-mu)**2/sig**2)
-    n = np.logspace(np.log10(10),np.log10(100000),dtype=int)
+    n = np.logspace(np.log10(10),np.log10(100000),dtype=int,num=40)
     # Preparing arrays
     P,P_s = np.zeros(len(n)),np.zeros(len(n))
     d,d_s = np.zeros(len(n)),np.zeros(len(n))
