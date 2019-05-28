@@ -332,7 +332,7 @@ if __name__ == '__main__':
         os.system('wget '+url+filename)
     random_num = np.genfromtxt(filename,delimiter=' ',skip_footer=1)
 
-    n = np.logspace(np.log10(10),np.log10(len(random_num)),dtype=int,num=40)
+    n = np.logspace(np.log10(10),np.log10(len(random_num)),dtype=int,num=10)
     test_P,test_D = np.zeros((10,len(n)),dtype=list),np.zeros((10,len(n)),dtype=list)
     # Applying Kuipers test 
     for i in range(10):

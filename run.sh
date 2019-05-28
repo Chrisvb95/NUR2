@@ -52,7 +52,3 @@ python3 a2_7.py > a2_7.txt
 
 echo "Generating the pdf"
 pdflatex tex_main.tex
-#bibtex template.aux
-
-
-
